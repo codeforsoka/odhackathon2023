@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Header with Dismissible Notification</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-custom {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Notification -->
+    <div class="alert alert-warning text-center" id="notification" role="alert">
+        <a href="message.html">新しいメッセージがあります</a>
+        <button type="button" class="btn-close btn-close-white position-absolute top-50 end-0 translate-middle-y"
+            aria-label="Close" onclick="closeNotification()"></button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <p>This is a simple example of a website using Bootstrap 5 with a dismissible notification bar.</p>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        function closeNotification() {
+            var element = document.getElementById('notification');
+            element.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

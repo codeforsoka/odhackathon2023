@@ -1,5 +1,5 @@
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
-import React, { FC, useState, useEffect, useCallback } from 'react'
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import { FC } from 'react'
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import GPS from './gps'
@@ -22,23 +22,6 @@ const Map: FC<Props> = (props) => {
       className: `default-marker ${color}`,
     });
   };
-  // const map = useMapEvents({
-  //   locationfound(e) {
-  //     setLat(e.latlng.lat)
-  //     setLon(e.latlng.lng)
-  //     // デバイスの現在地の緯度経度に地図の中心を移動する
-  //     map.flyTo(e.latlng, map.getZoom()); 
-  //   },
-  //   // moveend(e) {
-  //   //   // 地図の中心の緯度経度情報を redux に渡す
-  //   //   dispatch(
-  //   //     setMapCenterPosition({
-  //   //       lat: e.target._lastCenter.lat,
-  //   //       lng: e.target._lastCenter.lng,
-  //   //     })
-  //   //   );
-  //   // },
-  // });
   return (
     <MapContainer
       center={[lat, lng]}

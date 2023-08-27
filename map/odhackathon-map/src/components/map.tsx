@@ -3,6 +3,7 @@ import React, { FC, useState, useEffect, useCallback } from 'react'
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import GPS from './gps'
+import BabyMaker from './babyMaker'
 import icon from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
@@ -54,6 +55,7 @@ const Map: FC<Props> = (props) => {
           現在の位置です
         </Popup>
       </Marker>
+      <BabyMaker />
       <GPS />
     </MapContainer>
   );

@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/odhackathon2023/static/css/main.c0b6f07b.css",
-    "main.js": "/odhackathon2023/static/js/main.02c851a0.js",
-    "static/js/787.24237d41.chunk.js": "/odhackathon2023/static/js/787.24237d41.chunk.js",
-    "static/media/baby.png": "/odhackathon2023/static/media/baby.24d67872d010a50f9daf.png",
-    "index.html": "/odhackathon2023/index.html",
-    "main.c0b6f07b.css.map": "/odhackathon2023/static/css/main.c0b6f07b.css.map",
-    "main.02c851a0.js.map": "/odhackathon2023/static/js/main.02c851a0.js.map",
-    "787.24237d41.chunk.js.map": "/odhackathon2023/static/js/787.24237d41.chunk.js.map"
+    "main.css": "/odhackathon2023/map/odhackathon-map/static/css/main.c0b6f07b.css",
+    "main.js": "/odhackathon2023/map/odhackathon-map/static/js/main.ee24d752.js",
+    "static/js/787.24237d41.chunk.js": "/odhackathon2023/map/odhackathon-map/static/js/787.24237d41.chunk.js",
+    "static/media/baby.png": "/odhackathon2023/map/odhackathon-map/static/media/baby.24d67872d010a50f9daf.png",
+    "index.html": "/odhackathon2023/map/odhackathon-map/index.html",
+    "main.c0b6f07b.css.map": "/odhackathon2023/map/odhackathon-map/static/css/main.c0b6f07b.css.map",
+    "main.ee24d752.js.map": "/odhackathon2023/map/odhackathon-map/static/js/main.ee24d752.js.map",
+    "787.24237d41.chunk.js.map": "/odhackathon2023/map/odhackathon-map/static/js/787.24237d41.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c0b6f07b.css",
-    "static/js/main.02c851a0.js"
+    "static/js/main.ee24d752.js"
   ]
 }

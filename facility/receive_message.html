@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Message Display</title>
+  <title>SOSend - 受信した救難信号を見る</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <!-- Custom CSS -->
   <style>
-    html, body {
+    html,
+    body {
       margin: 0;
       padding: 0;
     }
+
     .navbar-custom {
-      background-color: orange;
+      background-color: #9ae17b;
     }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link,
+    .navbar-custom .navbar-toggler {
+      color: white;
+    }
+
     .message-container {
       padding: 20px;
       border: 1px solid #ccc;
@@ -23,14 +33,16 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Header -->
   <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container-fluid justify-content-between">
-      <a class="navbar-brand" href="#">My Website</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">SOSend</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> Menu
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
@@ -49,16 +61,21 @@
   </nav>
 
   <!-- Message Display -->
+  <div class="topic">
+    <a href="index.html">トップページ</a> > <a href="#">受信した救難信号の一覧</a> > 救難信号の詳細
+  </div>
   <div class="container message-container">
-    <h2>Message Details</h2>
+    <h2>救難信号の詳細</h2>
     <hr>
-    <p><strong>Time:</strong> 11:45 AM</p>
-    <p><strong>Location:</strong> Tokyo, Japan</p>
-    <p><strong>Message:</strong> 授乳室を利用したい</p>
+    <p><strong>受信時刻:</strong> 11:45 AM</p>
+    <p><strong>場所:</strong> Soka, Saitama, Japan</p>
+    <p><strong>救難信号の種類:</strong> 授乳室を利用したい</p>
+    <p><strong>メッセージ:</strong> 近くに来ているのですがどこにあるかわかりません。すみませんが、助けていただけないでしょうか？</p>
   </div>
 
   <!-- Bootstrap JS (optional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

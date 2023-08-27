@@ -25,14 +25,15 @@ const Map: FC<Props> = (props) => {
   };
   const notify = () => {
     // @ts-ignore
-    Push.create("こんにちは!!", {
-      body: "あざらしです!!",
+    Push.create("SOSend", {
+      body: "何か困りごとがありますか？お探しの施設の方に助けを求めることができます。",
       icon: babyImage,
       tag: "myTag",
       timeout: 12000,
       vibrate: [100, 100, 100],
       onClick: function (e: any) {
           console.log("onClick", e);
+          window.open("https://codeforsoka.github.io/odhackathon2023/facility/send_message.html", '_blank');
       },
       onShow: function (e: any) {
           console.log("onShow", e);
@@ -64,7 +65,8 @@ const Map: FC<Props> = (props) => {
       />
       <Marker position={[lat, lng]} icon={colorMarker("red")}>
         <Popup>
-          <input type="button" id="push" onClick={() => notify()} value="クリックするとプッシュ通知が送られます" />
+        【デモ用機能】クリックするとプッシュ通知が送られます(本来は施設に近づくと通知が自動で送られます)<br></br>
+          <input type="button" id="push" onClick={() => notify()} value="プッシュ通知を送る" />
         </Popup>
       </Marker>
       <BabyMaker />
